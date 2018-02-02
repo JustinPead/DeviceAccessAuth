@@ -89,6 +89,9 @@ GOOGLE SHEET INTERACTION
 sudo pip install gspread
 sudo pip install oauth2client
 
+ADDITIONAL FILES
+the client_secret.json.txt file for the google spreadsheet is needed for the google sheet interaction and is not included in the abover code
+the uct_info.pyc python compression is needed for gathering the uct data, this is also not included in the above info
 
 HARDWARE
 
