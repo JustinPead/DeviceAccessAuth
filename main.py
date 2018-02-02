@@ -149,8 +149,9 @@ if __name__ == "__main__":
                             #switch device off
                             if (admin_status == True or previous_user == info['uct_id']):
                                 lcd.lcd_string("Device off",LCD_LINE_1) 
-                                lcd.lcd_string("Good Bye",LCD_LINE_2)
+                                lcd.lcd_string("logging exit",LCD_LINE_2)                            
                                 leds.switching_device_off();
+                                log.log_record_exit(info['uct_id']) 
                                 on = False
                             else:
                                 lcd.lcd_string("Access Denied",LCD_LINE_1)
@@ -164,7 +165,7 @@ if __name__ == "__main__":
                             student_name = info['name']
                             previous_user = info['uct_id']
                             
-                            #switch device off
+                            #switch device on
                             if(True==access_status or True == admin_status):  
                                 lcd.lcd_string("Access Granted",LCD_LINE_1) 
                                 lcd.lcd_string("Device on",LCD_LINE_2)                                   
@@ -173,7 +174,7 @@ if __name__ == "__main__":
                                 leds.green();
                                 lcd.lcd_string("logging entry" ,LCD_LINE_1) 
                                 lcd.lcd_string("" ,LCD_LINE_2)
-                                log.log_record(info['uct_id'])                                
+                                log.log_record_entry(info['uct_id'])                                
                                 lcd.lcd_string("Welcome" ,LCD_LINE_1)                              
                                 lcd.lcd_string(student_name ,LCD_LINE_2)    
                                 
