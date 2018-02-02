@@ -1,0 +1,12 @@
+group
+Default,X,setting,,,
+Justin Pead,01422682,admin,,,
+Richard Whittemore,01429605,admin,,,
+Default,X,setting,800,1700,1
+Brendon Daniels,01429415,admin,,,
+Gareth Bloor,BLRGAR001,e_user,500,2000,1
+deviceSpecific
+Sylvan Morris,MRRSYL001,user,800,1630,1
+Do Yeou Ku,KXXDOY001,user,800,1630,1
+Joyce Mwangana,01421155,user,800,1630,1
+Yohennas Folly,FLLYOH001,user,800,1630,1,admin
